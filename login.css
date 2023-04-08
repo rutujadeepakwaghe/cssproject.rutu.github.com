@@ -1,0 +1,234 @@
+a:active{
+    color: aqua;
+}
+a:visited{
+    color:rgb(200, 92, 92);
+}
+.loginbackground{
+    background:linear-gradient(whitesmoke,black,whitesmoke);
+}
+.form-block{
+    height: 800px;
+    width: 1200px;
+   /* border: 2px solid red;*/
+    margin-left: 394px;
+    margin-top: 86px;
+    display: flex;
+    box-shadow: 8px 10px 2px black;
+}
+.img-block{
+    height: 800px;
+   width: 400px;
+   /* border:2px solid rgb(0, 34, 255); */
+}
+.img-block img{
+    filter:saturate(3) ;
+ 
+}
+.signin-block{
+    height: 800px;
+   width:900px;
+   /* border:2px solid rgb(0, 34, 255); */
+   background: linear-gradient(rgb(231 184 184),rgb(210 218 145),rgb(122 202 167));
+}
+.signin-block fieldset{
+    height: 630px;
+    width: 650px;
+    margin-left: 75px;
+    margin-top: 70px;
+    border: 4px solid rgb(74 152 174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.signin-block fieldset legend{
+    border: 2px solid rgb(123, 143, 232);
+    color: aliceblue;
+    font-style: oblique;
+    font-size: xx-large;
+    background-color: rgb(123, 143, 232);
+}
+.signin-block label{
+    color: rgb(123, 143, 232);
+    font-size: xx-large;
+    margin-left: -448px;
+    /* border: 2px solid red;*/ 
+    /* text-align: right; */
+   
+ 
+}
+.signin-block #email,#pwd{
+    height: 45px;
+    width:600px;
+    border-bottom: 5px solid rgb(99, 124, 235);
+    border-left: none;
+    border-right:none ;
+    border-top: none;
+    outline: none;
+    color: rgb(146, 208, 207);
+    background-color:rgb(99, 124, 235) ;
+    font-style: oblique;
+     background: linear-gradient(rgb(110, 110, 233),rgb(38, 227, 38),rgb(230, 230, 40)); 
+}
+.signin-block #pwd:focus{
+    background-color:white ; 
+   font-size: xx-large;
+   color: rgb(78, 146, 206);
+}
+.signin-block #email:focus{
+    background-color:white ;
+    font-size: xx-large;
+     color: rgb(46, 105, 156); 
+ }
+.signin-block form .sbtn{
+    height: 45px;
+    width: 150px;
+    color: aliceblue;
+    border: none;
+    font-size: xx-large;
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #b14974;
+    background-color: rgb(87, 114, 234);
+}
+.signin-block form p{
+    color: rgb(86, 112, 230);
+    font-size: x-large;
+
+}
+.signin-block form p a{
+    text-decoration: none;
+}
+  .about>h1{
+    text-align: center;
+    color: white;
+    background-color: rgb(10, 10, 26);
+    font-style: normal;
+    font-size: xx-large;
+  }
+  .about>p{
+    color: rgb(34, 34, 82);
+    height: 400px;
+    width: 70%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    padding-top: 55px;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .about>p::first-letter{
+   /* background-color: rgb(199, 160, 88); */
+   font-size: xx-large;
+   font-weight: bolder;
+   color: rgb(24, 24, 41);
+  }
+  .about>p::after{
+    content: " thanks to trapelo customers👍🏻";
+  }
+  .about ul>li{
+    color: red;
+    margin-left: 250px;
+    font-size: xx-large;
+  
+  }
+  .about ul>li::marker{
+    color: rgb(17, 17, 47);
+    font-size: larger;
+    /* border: 3px solid red; */
+  }
+  .about ul>li::selection{
+    background-color: black;
+    color: goldenrod;
+  }
+  .about>p::selection{
+   user-select: none;
+  }
+  
+  /* cards  */
+  /* cards css */
+  
+  .main-box{
+    height:100vh;
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: mainblock;
+    animation-duration: 25s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* background: linear-gradient(limegreen,purple,black); */
+  }
+  
+  @keyframes mainblock{
+    0%{
+        background: linear-gradient(rgb(76, 82, 76),purple,black);
+    }
+  25%{
+    background-color: rgb(98, 82, 82);
+  }
+  50%{
+    border:200px solid rgb(171, 109, 230);
+  }
+  100%{
+    background-image: url(./task/images/vizag.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  }
+  .cards{
+    /* border: 2px solid red; */
+    height:450px;
+    box-shadow: 2px 3px 3px black;
+    animation: cards;
+    animation-delay: 3s;
+    animation-duration: 20s;
+    animation-iteration-count:infinite;
+  }
+  @keyframes cards {
+   0%{
+    background-color: rgb(102, 19, 102);
+   }
+   10%{
+    background-color: indigo;
+    border-radius: 10%;
+   }
+   20%{
+    background-color: rgb(55, 10, 144);
+    margin-left: 200px;
+   }
+   30%{
+    background-color:green;
+    margin-right: 200px;
+   }
+   40%{
+    background-color:rgb(118, 108, 108);
+    transform: skew(15deg);
+   }
+   50%{
+    background-color: rgb(190, 215, 49);
+    transform: rotateX(20deg);
+   }
+   100%{
+    background: linear-gradient(blue,grey,black);
+   }
+   
+  }
+  .cards h1{
+    color: rgb(103, 167, 222);
+    font-size: xx-large;
+    text-decoration: overline;
+    text-decoration-color: blue;
+    padding-left: 100px;
+    padding-top:50px ;
+    font-weight: bolder;
+  }
+  .sbtn{
+    border:none;
+    background-color: blue;
+    color: aliceblue;
+    font-size: larger;
+    height: 35px;
+    width: 180px;
+    border-radius: 25px;
+    margin-left: 60px;
+  }

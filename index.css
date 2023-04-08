@@ -1,0 +1,551 @@
+@import url(./footer.css);
+@import url(./login.css);
+@import url(./Otpcard.css);
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  .nav-block {
+    border: 2px solid black;
+    height: 550px;
+    background: linear-gradient(rgb(14, 14, 38),rgb(40, 40, 103),
+    rgb(58, 58, 155),rgb(51, 51, 120));
+  }
+  .nav-block .headerblock {
+    height: 80px;
+    /* border: 2px solid red; */
+  }
+  .nav-block .headerblock .headerblockin {
+    height: 80px;
+    /* border: 2px solid rgb(38, 255, 0); */
+    width: 70%;
+    box-shadow: 6px 6px 4px rgb(67 60 60);
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .headerblock .headerblockin .domain {
+    height: 85px;
+    width: 149px;
+   /* border: 2px solid red;*/
+    display: flex;
+    align-items: center;
+    padding-left: 42px;
+    padding-top: 4px;
+    justify-content: space-around;
+}
+  .headerblock .headerblockin .domain > h1 {
+    font-size: xx-large;
+    /* border: 2px solid rgb(21, 21, 44); */
+    color: aliceblue;
+    background-color: rgb(18, 18, 53);
+    border-radius: 10px 10px;
+    border-color: none;
+    height: 25px;
+    width: 40px;
+    padding: auto;
+    animation: t;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes t {
+    15% {
+      height: 50px;
+      width: 40px;
+      padding: auto;
+      border-radius: 100%;
+      background-color: gray;
+      color: antiquewhite;
+      font-size: xx-large;
+      border-color: none;
+      padding-left: 5px;
+    }
+    35% {
+      height: 45px;
+      width: 40px;
+      padding: auto;
+      border-radius: 20px 10px;
+      background-color: rgb(53, 168, 213);
+      color: rgb(197, 31, 31);
+      font-size: xx-large;
+      border-color: none;
+      padding-left: 5px;
+    }
+    65% {
+      height: 60px;
+      width: 40px;
+      padding: auto;
+      border-radius: 15px 10px;
+      background-color: rgb(208, 24, 24);
+      color: rgb(73, 191, 227);
+      font-size: xx-large;
+      border-color: none;
+      padding-left: 5px;
+    }
+    85% {
+      height: 60px;
+      width: 40px;
+      padding: auto;
+      border-radius: 30%;
+      background-color: rgb(15, 5, 5);
+      color: antiquewhite;
+      font-size: xx-large;
+      border-color: none;
+      padding-left: 5px;
+    }
+    100% {
+      height: 60px;
+      width: 40px;
+      padding: auto;
+      font-size: xx-large;
+      border: 2px solid rgb(21, 21, 44);
+      color: aliceblue;
+      background-color: rgb(18, 18, 53);
+      border-radius: 10px 10px;
+      padding-top: 15px;
+      border-color: none;
+      padding-left: 5px;
+    }
+  }
+  .headerblock .headerblockin .domain > h5 {
+    font-size: x-large;
+    width: 100px;
+    min-height: 43px;
+    padding-top: 3px;
+    /* transform: rotate(1deg); */
+    text-align: center;
+    border: 2px solid rgb(70, 70, 167);
+    color: rgb(196, 44, 17);
+    background-color: rgb(65, 65, 184);
+    border-radius: 20px 10px;
+  }
+  .headerblock .headerblockin .modules {
+    height: 80px;
+  /*  border: 2px solid red; */
+    width: 890px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-evenly;
+  }
+  .headerblock .headerblockin .modules>.specialoffers{
+      height: 80px;
+      width: 210px;
+      /* border: 2px solid green; */
+      display: flex;
+      align-items: center;
+      justify-content:center;
+  }
+  .headerblock .headerblockin .modules>.specialoffers>i{
+    color: rgb(6, 10, 13);
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: aliceblue;
+    border-radius: 100%;
+    height: 32px;
+    width: 35px;
+    padding-top: 4px;
+    padding-left: 12px;
+     margin-left: -10px; 
+}
+  .headerblock .headerblockin .modules>.specialoffers>h5{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-decoration-line: overline;
+  }
+  .headerblock .headerblockin .modules>.mytrips{
+      height: 80px;
+      width: 210px;
+      /* border: 2px solid green; */
+      display: flex;
+      align-items: center;
+      justify-content:center;
+  }
+  .headerblock .headerblockin .modules>.mytrips>i{
+    color: rgb(6, 10, 13);
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: aliceblue;
+    border-radius: 100%;
+    height: 32px;
+    width: 35px;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin-left: -10px;
+
+  }
+  .headerblock .headerblockin .modules>.mytrips>h5{
+      color: aliceblue;
+      font-weight: bolder;
+      font-size: larger;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+      text-decoration-line: overline;
+  }
+  
+  .headerblock .headerblockin .modules>.login{
+      height: 80px;
+      width: 210px;
+      /* border: 2px solid green; */
+      display: flex;
+      align-items: center;
+      justify-content:center;
+  }
+  
+  .headerblock .headerblockin .modules>.login>p{
+    color: rgb(6, 10, 13);
+    font-weight: bolder;
+    font-size: larger;
+    background-color: aliceblue;
+    border-radius: 100%;
+    height: 28px;
+    width: 28px;
+    padding-top: 5px;
+    padding-left: 8px;
+    margin-left: 6px;
+    transform: rotate(180deg);
+  }
+  .headerblock .headerblockin .modules>.login>h5{
+      color: aliceblue;
+      font-weight: bolder;
+      font-size: larger;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+      text-decoration-line: overline;
+  }
+  .headerblock .headerblockin .modules>.inr{
+      height: 80px;
+      width: 210px;
+      /* border: 2px solid green; */
+      display: flex;
+      align-items: center;
+      justify-content:center;
+  }
+  .headerblock .headerblockin .modules>.inr>h1{
+    color: rgb(6, 10, 13);
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: aliceblue;
+    border-radius: 100%;
+    height: 27px;
+    width: 27px;
+    padding-top: 4px;
+    padding-left: 7px;
+    margin-left: 10px;
+    transform: rotate(180deg);
+  }
+  .headerblock .headerblockin .modules>.inr>h5{
+    color: aliceblue;
+      font-weight: bolder;
+      font-size: larger;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: italic;
+      text-decoration-line: overline;
+  }
+  #flightsblock{
+    height: 345px;
+    width: 1295px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 200px;
+    border: 10px solid rgb(77, 77, 224);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 66px 0px 0px 385px;
+  }
+  .navicon{
+    height: 70px;
+    width: 964px;
+    margin-top: -384px;
+    margin-left: 555px;
+    border: 2px solid rgb(43, 165, 67);
+    background-color: rgb(245 241 241);
+    display: flex;
+    text-align: center;
+    border-radius: 10px ;
+  }
+  .navicon .flights{
+    height: 70px;
+    width: 92px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red; */
+  }
+  .navicon .flights>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(25, 25, 27);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .flights h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .flights h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .flights>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .hotels{
+    height: 70px;
+    width: 92px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+    /* border: 2px solid red; */
+  }
+  .navicon .hotels>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .hotels h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .hotels h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .hotels>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .packages{
+    height: 70px;
+    width: 105px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red; */
+  }
+  .navicon .packages>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .packages h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .packages h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .packages>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .cabs{
+    height: 70px;
+    width: 92px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+    /* border: 2px solid red; */
+  }
+  .navicon .cabs>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .cabs h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .cabs h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .cabs>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .trains{
+    height: 70px;
+    width: 92px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red; */
+  }
+  .navicon .trains>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .trains h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .trains h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .trains>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .bus{
+    height: 70px;
+    width: 92px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red; */
+  }
+  .navicon .bus>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .bus h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .bus h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .bus>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .payments{
+    height: 70px;
+    width: 110px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red; */
+  }
+  .navicon .payments>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .payments a{
+    text-align: center;
+    font-size: large;
+    color: rgb(19, 19, 21);
+  }
+  .navicon .payments a:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .payments>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .payments>a:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .feedback{
+    height: 70px;
+    width: 107px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red; */
+  }
+  .navicon .feedback>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .feedback h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .feedback h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .feedback>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .reviews{
+    height: 70px;
+    width: 92px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red;*/
+  }
+  .navicon .reviews>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .reviews h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .reviews h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .reviews>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .navicon .activities{
+    height: 70px;
+    width: 107px;
+    color: rgb(19, 19, 21);
+    background-color: rgb(245 241 241);
+   /* border: 2px solid red; */
+  }
+  .navicon .activities>i{
+    font-size: xx-large;
+    height: 50px;
+    color: rgb(19, 19, 21);
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  .navicon .activities h6{
+    text-align: center;
+    font-size: large;
+  }
+  .navicon .activities h6:hover{
+    text-decoration: underline;
+    color: rgb(35, 186, 35);
+  }
+  .navicon .activities>i:hover{
+    text-decoration: underline;
+    color: rgb(244, 4, 136);
+  }
+  .reg{
+    margin-left: 0px;
+    padding-left: 767px;
+    background: linear-gradient(45deg, #3b3856, transparent);
+  }

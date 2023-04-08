@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>form</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!--
+    Header block
+  -->
+  <div class="nav-block">
+    <header class="headerblock">
+       <section class="headerblockin">
+           <div class="domain">
+             <h1>T</h1>
+             <h5>rapelo</h5>
+           </div>
+           <div class="modules">
+               <div class="specialoffers">
+                   <i class="fa-solid fa-percent"></i>
+                   <h5>Special Offers</h5>
+               </div>
+               <div class="mytrips">
+                   <i class="fa-solid fa-person-walking-luggage"></i>
+                   <h5>My trips</h5>
+               </div>
+               <div class="login">
+                   <h5>Log in</h5>
+                   <p>^</p>
+               </div>
+               <div class="inr">
+                  
+                   <h5>IN ENG INR </h5>
+                   <h1>^</h1>
+               </div>
+           </div>
+       </section>
+    </header>
+    <div id="flightsblock">
+       
+    </div>
+
+    <div class="navicon">
+       <div class="flights">
+           <i class="fa-solid fa-plane-departure"></i>
+           <h6>Flights</h6>
+       </div>
+       <div class="hotels">
+           <i class="fa-solid fa-hotel"></i>
+           <h6>Hotels</h6>
+       </div>
+       <div class="packages">
+           <i class="fa-solid fa-truck-fast"></i>
+           <h6>Packages</h6>
+       </div>
+       <div class="cabs">
+           <i class="fa-solid fa-taxi"></i>
+           <h6>Cabs</h6>
+       </div>
+       <div class="trains">
+           <i class="fa-solid fa-train"></i>
+           <h6>Trains</h6>
+       </div>
+       <div class="bus">
+           <i class="fa-solid fa-bus"></i>
+           <h6>Bus</h6>
+       </div>
+       <div class="payments">
+           <i class="fa-brands fa-cc-amazon-pay"></i>
+           <a href="./Payment.html">Payments</a>
+       </div>
+       <div class="feedback">
+           <i class="fa-regular fa-comments"></i>
+           <h6>Feedback</h6>
+       </div>
+       <div class="reviews">
+           <i class="fa-solid fa-star"></i>
+           <h6>reviews</h6>
+       </div>
+       <div class="activities">
+           <i class="fa-solid fa-medal"></i>
+           <a href="./">Activities</a>
+       </div>
+    </div>
+    
+  </div>
+
+  <!--Registration-->
+  </body>
+  </html>
+    <h1 class="reg">REGISTRATION FORM</h1>
+    <form style="background-color: black;
+    color: rgb(232, 155, 155);" autofocus="on" autocomplete="on"
+    method="post" action="">
+        <fieldset>
+            <legend>REGISTRATION</legend>
+
+                <center>
+            <table border="2">
+              <tr>
+                <td>  <label for="name">NAME</label></td>
+                <td> <input type="text" id="name" name="username"
+                  placeholder="CAPITALS ONLY"></td>
+              </tr>
+             
+            <tr>
+              <td><label for="dob">DATE OF BIRTH</label></td>
+              <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+     
+          <tr>
+            <td><label for="contact">CONTACT</label></td>
+            <td><input type="tel" id="contact" name="contact"
+              maxlength="10"
+              minlength="10"></td>
+          </tr>
+       
+           <tr>
+            <td><label for="email">EMAIL</label></td>
+            <td> <input type="email" id="email" name="email" ></td>
+           </tr>
+       
+           <tr>
+            <td><label for="gender">GENDER</label></td>
+            <td>
+              <input type="radio" id="gender"
+              name="gender" value="male">MALE
+             <input type="radio" id="gender"
+             name="gender" value="female">FEMALE
+             <input type="radio" id="gender"
+              name="gender" value="others">TRANSGENDER
+            </td>
+           </tr>
+       
+           <tr>
+            <td><label for="pid">PASSPORT ID</label></td>
+            <td> <input type="text" id="pid" name="pid" disabled></td>
+           </tr>
+
+           <tr>
+            <td> <label for="ADDRESS">ADDRESS</label></td>
+            <td><textarea  id="ADDRESS" name="ADDRESS" style="width: 315px; height: 50px;" >
+            </textarea ></td>
+           </tr>
+       
+           <tr>
+            <td><label for="photo">UPLOAD PHOTO</label></td>
+            <td><input type="file" id="photo" name="photo"
+              title="only jpeg/png"></td>
+           </tr>
+
+           <tr>
+            <td><label for="pwd">CREATE PASSWORD</label></td>
+            <td><input type="password"
+              id="pwd" name="pwd" value="class12" readonly ></td>
+           </tr>
+       
+           <tr>
+            <td><label for="pwd2">RENAME PASSWORD</label></td>
+            <td> <input type="password" id="pwd2" name="pwd2"></td>
+           </tr>
+     
+           <tr>
+            <td><label for="PB">PREFERED BOOKING</label></td>
+            <td>
+              <input type="checkbox" id="PB"
+         name="PB" value="fap">FAMILY PACKAGES
+        <input type="checkbox" id="PB"
+        name="PB" value="fep">FELLOW PACKAGES<br><br>
+        <input type="checkbox" id="PB"
+        name="PB" value="cp">COUPLE  PACKAGES
+        <input type="checkbox" id="PB"
+        name="PB" value="sp">SOLO PACKAGE
+            </td>
+           </tr>
+       
+           <tr>
+            <td><label for="an">ACCOUNT NUMBER</label></td>
+            <td> <input type="text" id="an" name="an" novalidate></td>
+           </tr>
+
+           <tr>
+            <td><label for="yp">YEAR PLAN</label></td>
+            <td>
+              <input type="checkbox" id="yp"
+         name="yp" value="INTER">INTER STATE
+        <input type="checkbox" id="yp"
+        name="yp" value="INTERA">INTRA STATE
+        <input type="checkbox" id="yp"
+        name="yp" value="ABROAD">ABROAD--a
+            </td>
+           </tr>
+     
+       
+        <!-- <label for="age">AGE</label>
+        <input type="number" id="age" name="age">
+        <br><br> -->
+
+        <tr>
+          <td><label for="rm">REGISTRATION MEMBERS</label></td>
+          <td>
+            <input type="checkbox" id="rm"
+        name="rm" value="p" checked>PARENTS
+        <input type="checkbox" id="rm"
+        name="rm" value="f">FREINDS<br><br>
+        <input type="checkbox" id="rm"
+         name="rm" value="w">WIFE
+        <input type="checkbox" id="rm"
+        name="rm" value="c">CHILDREN
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="staydays">PREFERABLE STAY DAYS</label>
+          </td>
+          <td>
+        <select id="staydays" name="staydays">
+          <optgroup label="InterState">
+            <option value="6-8is">6-8 days</option>
+            <option value="15-20is">15-20 days</option>
+            <option value="20-30is">20-30 days</option>
+          </optgroup>
+          <optgroup label="InteraState">
+            <option value="6-8ia">6-8 days</option>
+            <option value="15-20ia">15-20 days</option>
+            <option value="20-30ia">20-30 days</option>
+          </optgroup>
+          <optgroup label="ABROAD">
+            <option value="6-8a">6-8 days</option>
+            <option value="15-20a">15-20 days</option>
+            <option value="month">month</option>
+          </optgroup>
+         
+        </select>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td><label for="mt">MODE OF TRANSPORT</label></td>
+          <td>           <input type="checkbox" id="mt"
+            name="mt" value="cab">CAB
+            <input type="checkbox" id="mt"
+            name="mt" value="bus">BUS<br><br>
+            <input type="checkbox" id="mt"
+            name="mt" value="flight">FLIGHT
+            <input type="checkbox" id="mt"
+            name="mt" value="train">TRAIN
+ </td>
+        </tr>
+      </table>
+    </center>    
+           
+
+<BR><br>
+
+<hr>
+<center>
+        <input type="submit">
+        <input type="reset">
+        <a href="./Otpcard.html" style="padding-left: 10px;">Send OTP</a>
+      </center>
+    </fieldset>
+    </form>
+
+    <!-- Footer Block-->
+    
+    <div class="footer-block">
+      <div class="inn-footerblock">
+        <div class="subscribe-block">
+           <section class="sb1">
+            <p>Want to receive exclusive hotel offers? Subscribe to our newsletter!
+                </p>
+           </section>
+           <section class="sb2">
+             <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS">
+             <button type="submit">Subscribe</button>
+           </section>
+           
+        </div>
+        <div class="footer-block2">
+            <div class="media">
+                <p>Trapilo<span><sup>R</sup></span> | Banglore,karnataka -560004</p>
+                <div class="icons">
+                  <div id="fb">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div id="in">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div id="tw">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div id="yo">
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                  <div id="li">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+             </div>
+             <section class="country">
+                  <select id="country-drop">
+                       <option value=""><a href="">🏳️‍🌈INDIA</a></option>
+                       <option value=""><a href="">CANADA</a></option>
+                       <option value=""><a href="">BELGIUM</a></option>
+                       <option value=""><a href="">FRANCE</a></option>
+                       <option value=""><a href="">GERMANY</a></option>
+                       <option value=""><a href="">AUSTRALIA</a></option>
+                       <option value=""><a href="">HONG KONG</a></option>
+                       <option value=""><a href="">SWEDEN</a></option>
+                       <option value=""><a href="">USA</a></option>
+                       <option value=""><a href="">UNITED KINGDOM</a></option>
+                  </select>      
+             </section>
+            </div>
+  
+            <section class="list-block">
+                   <article class="block1">
+                    <ul type="none">
+                      <li>company</li>
+                      <li>jobs</li>
+                      <li>press</li>
+                      <li>investor relation</li>
+                    </ul>
+                   </article>
+                   <article class="block2">
+                    <ul type="none">
+                      <li>Mobile apps - searching on the go</li>
+                      <li>trapelo Business Studio</li>
+                    </ul>
+                   </article>
+                   <article class="block3">
+                    <ul type="none">
+                      <li>help</li>
+                      <li>Terms and condition</li>
+                      <li>legal notice</li>
+                      <li>privacy</li>
+                      <li>cyber security</li>
+                      <li>Coronavirus (COVID-19) travel advice</li>
+                    </ul>
+                   </article>
+            </section>
+  
+            <div class="domain">
+             <p>trapelo</p>
+             <h6>copyright @trapelo 2023| reserved</h6>
+            </div>
+  
+      </div>
+    </div>
+  
+</body>
+</html>

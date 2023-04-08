@@ -1,0 +1,104 @@
+@import url(./footer.css);
+@import url(./header.css);
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.otpcard_block{
+    height: 728px;
+    width: 450px;
+    border: 2px solid red;
+    margin-left: 650px;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(rgb(84 183 106) , rgb(90 158 188) ,rgb(43 14 14));
+    justify-content: space-around;
+}
+.otpcard_block h1{
+    color: blueviolet;
+    font-size: xx-large;
+    margin-top: 6px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.otpcard_block .otp_input{
+    display: flex;
+    justify-content: space-evenly;
+    height: 61px;
+    margin-left: 2px;
+    margin-top: 19px;
+    width: 445px;
+    /* border: 2px solid red; */
+}
+.otpcard_block .otp_input .data{
+    width: 60px;
+    font-size: xx-large;
+    border-radius: 9px;
+    text-align: center;
+    color: rgb(23, 23, 44);
+    background-color: blue
+}
+.otpcard_block .otp_input .data:focus{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    background: linear-gradient(red ,black,whitesmoke);
+}
+.otpcard_block .submitblock{
+    height: 67px;
+    width: 449px;
+    /* border: 2px solid red; */
+    margin-top: 21px;
+    margin-left: 0px;
+}
+.otpcard_block .submitblock .otp_sbtn{
+    color: aliceblue;
+    background-color: rgb(10, 16, 37);
+    height: 40px;
+    width: 130px;
+    background: linear-gradient(black ,black,whitesmoke);
+    font-size: large;
+    margin-left: 14px;
+    border-radius: 15px;
+
+}
+.submitblock h3{
+    text-align: end;
+    margin-top: 10px;
+    /* margin-left: 139px; */
+    font-size: medium;
+}
+.otpcard_block h4{
+    margin-top: 20px;
+}
+.number-keyboard{
+    height: 448px;
+    width: 367px;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    row-gap: 25px;
+    column-gap: 25px;
+    margin-top: 15px;
+    margin-left: 51px;
+    /* box-shadow: 2px 3px 4px black; */
+
+}
+.number-keyboard .num{
+    height: 60px;
+    width: 70px;
+    /* padding-top: 7px; */
+    border: 2px solid blue;
+    background-color: rgb(18, 18, 35);
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+    align-items: center;
+    box-shadow: 4px 4px 1px rgb(185 155 156);
+    border-radius: 10px;
+    padding-top: 9px;
+    box-sizing: border-box;
+}
